@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    background-color: #f252a7;
+    box-shadow: 2px 7px 15px rgba(63, 63, 63, 0.247);
+}
+
+header .marca{
+    color: white;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.marca img{
+    width: 250px;
+}
+
+header .menu{
+    position: relative;
+}
+
+header .menu .menu-items a{
+    position: relative;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+section{
+    display: flex;
+    align-items: flex-end;
+    padding: 100px 200px;
+}
+
+#bakery{
+    scroll-margin-top: 17ex;
+}
+
+.inicio{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #DB6899 ;
+    color: white;
+}
+
+.inicio .contenido{
+    z-index: 888;
+    margin-top: 50px;
+}
+
+.inicio .contenido h1{
+    font-size: 4em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.inicio .contenido p{
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+.inicio:before{
+    z-index: 7;
+    content: '';
+    position: absolute;
+    background: rgba(248, 31, 125, 0.459);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.inicio video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-bakery{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    padding: 0px 200px 0px 200px;
+}
+
+.our-bakery h2{
+    margin-top: 80px;
+    font-weight: 400;
+    padding-top: 45px;
+    font-size: 1.7em;
+}
+
+.our-bakery h3{
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+.our-bakery p{
+    font-size: 1.1em;
+    padding-top: 40px;
+    font-weight: 300;
+}
+
+.our-bakery img{
+
+    margin-right: 30px;
+    height: 420px;
+    float: left;
+}
+
+.pasteles{
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background-image: url(pastelero.jpg);  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.pasteles:before{
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: rgba(46, 25, 25, 0.836);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.pasteles h2{    
+    position: relative;
+    z-index: 5;
+    padding-top: 70px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+}
+
+.slogan {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.cards{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+}
+
+.card img{
+    width: 290px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    max-height: 190px;
+}
+
+.card h4{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #464646e7;
+}
+
+.card .info-pasteles{
+    font-weight: 500;
+    color: #464646e7;
+    text-align: center;
+    font-weight: 300;
+}
+
+.card .costo{
+    font-weight: 500;
+    color: #464646e7;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card{
+    width: 290px;
+    height: 380px;
+    background-color: rgb(243, 243, 243);
+    
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: .4s ease;
+}
+
+.card:hover{
+    transition: .4s ease;
+    margin-top: 40px;
+
+    color: white;
+}
+
+.toppings{
+    height: 1100px;
+}
+
+.toppings h2{    
+    padding-top: 70px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.topp {
+    text-align: center;
+    padding-top: 12px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.contacto{
+    width: 100%;
+    height: 1180px;
+    background-color: #428cdf;
+}
+
+.contacto h3{
+    padding-top: 80px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.contacto span{
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.form{
+    max-width: 900px;
+    width: 550px;
+    margin: auto;
+    height: 940px;
+    background-color: white;
+    border-radius: 18px;
+}
+
+form{
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+
+label{
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.nombre{
+    border: none;
+    width: 450px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(228, 228, 228);
+    font-size: 1em;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.descripcion{
+    border: none;
+    width: 450px;
+    border-radius: 25px;
+    background-color: rgb(228, 228, 228);
+    font-size: 1em;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+::placeholder{
+    color:rgb(107, 107, 107);
+    font-weight: 300;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.enviar{
+    font-size: 1em;
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    font-weight: 500;
+    font-size: 1.2em;
+    background-color: #df498afa;
+    cursor: pointer;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #f252a7;
+    color: white;
+    height: 200px;
+    padding-top: 50px;
+    font-size: 1.2em;
+  }
+
+.admin{
+    width: 100%;
+    height: 100vh;
+}
+
+/*                                                         */
+
+.admin-cards{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-card h4{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #464646e7;
+}
+
+.admin-card .info-pasteles{
+    font-weight: 500;
+    color: #464646e7;
+    text-align: center;
+    font-weight: 300;
+}
+
+.admin-card{
+    width: 420px;
+    height: 380px;
+    background-color: rgb(243, 243, 243);
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: .4s ease;
+}
+
+.admin-card:hover{
+    transition: .4s ease;
+    margin-top: 40px;
+
+    color: white;
+}
+
+table{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    
+}
+
+th, td{
+    border: 3px solid rgba(146, 146, 146, 0.342);
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+}
